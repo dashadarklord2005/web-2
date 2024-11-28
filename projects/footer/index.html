@@ -2,19 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Подключите шрифт -->
+    <title>Footer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Основные стили для страницы */
+        body {
+            font-family: 'Exo 2', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        footer {
+            background-color: #05A88D;
+            color: #FFFFFF;
+        }
+
+        /* Верхняя часть футера */
+        .footer__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 2px solid #F1E67D;
+        }
+
+        .footer__left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .text {
+            font-size: 14px;
+        }
+
+        .footer__right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .contact {
+            margin-bottom: 10px;
+        }
+
+        .phone {
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+
+        .phone:hover {
+            color: #F1E67D;
+        }
+
+        .address {
+            font-size: 14px;
+        }
+
+        /* Нижняя часть футера */
+        .footer__bottom {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            background-color: #05A88D;
+        }
+
+        .footer__bottom span {
+            color: #F1E67D;
+        }
+    </style>
 </head>
 <body>
-     <div class="wrapper">
-        <main class="main"></main>
-        <footer class="footer">
-            <!-- Здесь должен быть ваш код -->
-        </footer>
-    </div>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__left">
+                <a href="#" class="logo">Логотип</a>
+                <div class="text">Краткое описание компании или слоган.</div>
+            </div>
+            <div class="footer__right">
+                <div class="contact">
+                    <a href="tel:+1234567890" class="phone">+123 456 7890</a>
+                </div>
+                <div class="address">1234, Город, Улица, 56</div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            © 2024 Все права защищены. <span>Название компании</span>.
+        </div>
+    </footer>
 </body>
 </html>
 
