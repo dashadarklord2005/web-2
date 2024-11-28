@@ -2,20 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Подключите шрифт -->
+    <title>Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Логотип */
+        .menu__logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #05a88d;
+            text-decoration: none;
+        }
+
+        /* Меню */
+        nav.menu {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .menu__ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+        }
+
+        .menu__li {
+            position: relative;
+        }
+
+        .menu__link {
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            color: #000000;
+            transition: color 0.3s ease;
+        }
+
+        .menu__link:hover {
+            color: #05a88d;
+        }
+
+        /* Кнопки */
+        .menu__signup,
+        .menu__login {
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .menu__signup {
+            background-color: #05a88d;
+            color: #FFFFFF;
+        }
+
+        .menu__signup:hover {
+            background-color: #048c76;
+        }
+
+        .menu__login {
+            background-color: transparent;
+            color: #05a88d;
+            border: 2px solid #05a88d;
+        }
+
+        .menu__login:hover {
+            background-color: #05a88d;
+            color: #FFFFFF;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
+    <header>
+        <a href="index.html" class="menu__logo">Логотип</a>
         <nav class="menu">
-            <!-- Здесь должен быть ваш код -->
+            <ul class="menu__ul">
+                <li class="menu__li"><a href="#" class="menu__link">Home</a></li>
+                <li class="menu__li"><a href="#" class="menu__link">About</a></li>
+                <li class="menu__li"><a href="#" class="menu__link">Services</a></li>
+                <li class="menu__li"><a href="#" class="menu__link">Products</a></li>
+            </ul>
+            <div class="menu__buttons">
+                <a href="#" class="menu__signup">Sign Up</a>
+                <a href="#" class="menu__login">Log In</a>
+            </div>
         </nav>
-    </header>  
+    </header>
 </body>
 </html>
-
 
 
